@@ -1,0 +1,12 @@
+# 1. Ignorar absolutamente todos los archivos
+*
+
+# 2. Excepción: NO ignorar los directorios 
+!*/
+
+# 3. Excepción: NO ignorar este mismo archivo 
+!.gitignore
+
+# 4. Excepciones: Tus archivos específicos
+!30_CS_Notes/Python.md
+!30_CS_Notes/OverTheWire - Bandit.md
