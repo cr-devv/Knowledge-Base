@@ -61,3 +61,35 @@
 * `.items()`: Devuelve todos los pares de clave-valor agrupados (muy útil para recorrerlos más adelante).
 * `.pop("clave")`: Elimina la clave especificada del diccionario y te devuelve el valor que contenía.
 * `in` (en diccionarios): Comprueba si una **clave** específica existe dentro del diccionario (ojo: busca en las claves, no en los valores).
+## 9. Tuples 
+* `()`: Se definen agrupando elementos entre paréntesis. 
+* **Inmutables:** A diferencia de las listas, una vez creada una tupla, **no puedes** modificar, añadir ni eliminar sus elementos.
+* Ocupan menos espacio en memoria y son más rápidas de procesar que las listas (ideales para datos que no deben cambiar, como coordenadas o configuraciones).
+* Puedes extraer sus valores a variables individuales rápidamente: `a, b = (1, 2)`.
+* **Métodos principales (solo tiene dos):**
+    * `.count(elemento)`: Cuenta cuántas veces aparece un elemento específico en la tupla.
+    * `.index(elemento)`: Devuelve la posición (índice) de la primera aparición del elemento.
+
+## 10. Sets (Conjuntos)
+* `set()` o `{}`: Se definen usando la función `set()` (si está vacío) o agrupando elementos entre llaves (ojo: si tiene formato `"clave": valor`, es un diccionario; si solo son valores, es un set).
+* **Elementos únicos:** Los sets eliminan automáticamente cualquier elemento duplicado.
+* **Desordenados:** No tienen un orden fijo. No puedes acceder a sus elementos usando índices (`mi_set[0]` arrojará error).
+* **Métodos principales:**
+    * `.add(elemento)`: Agrega un elemento al set.
+    * `.remove(elemento)`: Elimina un elemento (arroja error si el elemento no existe).
+    * `.discard(elemento)`: Elimina un elemento (pero si no existe, simplemente no hace nada y el programa sigue).
+    * `.clear()`: Vacía el set por completo.
+    * `.union(otro_set)` o `|`: Une dos sets (recordando que ignorará los repetidos).
+    * `.intersection(otro_set)` o `&`: Devuelve un nuevo set solo con los elementos que ambos conjuntos tienen en común.
+
+## 11. Booleanos y Comparaciones
+* `True` / `False`: Los dos valores booleanos de Python (siempre deben escribirse con la primera letra en mayúscula).
+* **Operadores de Comparación (Devuelven un booleano):**
+	* `"=="` ¿Es igual a? 
+    * `!=`: Diferente de.
+    * `>`, `<`: Mayor que, Menor que.
+    * `>=`, `<=`: Mayor o igual que, Menor o igual que.
+* **Operadores Lógicos:**
+    * `and`: Devuelve `True` solo si **todas** las condiciones son verdaderas.
+    * `or`: Devuelve `True` si **al menos una** condición es verdadera.
+    * `not`: Invierte el valor booleano (si es `True` lo vuelve `False`, y viceversa).
